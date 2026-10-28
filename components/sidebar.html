@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Layout</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .layout {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 220px;
+            padding: 20px;
+            background-color: #222222;
+            color: white;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: #444444;
+        }
+
+        .content {
+            flex: 1;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <a href="../index.html">Beranda</a>
+            <a href="../pages/about.html">Tentang</a>
+            <a href="../pages/gallery.html">Galeri</a>
+            <a href="../pages/contact.html">Kontak</a>
+        </aside>
+
+        <main class="content">
+            <h1>Sidebar Layout</h1>
+            <p>Ini adalah area konten utama portofolio saya.</p>
+        </main>
+    </div>
+</body>
+</html>
