@@ -4,37 +4,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
+    <title>Kumpulan Tombol</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            width: 100%;
+            max-width: 650px;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            color: #1e293b;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #64748b;
+            margin-bottom: 30px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 12px 22px;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .secondary {
+            background: #e2e8f0;
+            color: #334155;
+        }
+
+        .outline {
+            background: white;
+            color: #2563eb;
+            border: 2px solid #2563eb;
+        }
+
+        .submit {
+            background: #16a34a;
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .primary:hover {
+            background: #1d4ed8;
+        }
+
+        .secondary:hover {
+            background: #cbd5e1;
+        }
+
+        .outline:hover {
+            background: #2563eb;
+            color: white;
+        }
+
+        .submit:hover {
+            background: #15803d;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 30px;
+            color: #64748b;
+            text-decoration: none;
+        }
+
+        .back:hover {
+            color: #2563eb;
+        }
+    </style>
 </head>
+
 <body>
-    <img src="/assets/images/photo.jpg"
-     alt="Foto profil saya"
-     width="150"
-     height="150"
-     style="display: block; margin: auto; border-radius: 50%; object-fit: cover;">
+    <div class="container">
+        <h1>Kumpulan Tombol</h1>
+        <p>Contoh berbagai jenis tombol menggunakan CSS.</p>
 
-    <h1 style="text-align: center; color: navy;">
-        About me
-    </h1>
+        <div class="button-group">
+            <a href="#" class="btn primary">Primary</a>
+            <a href="#" class="btn secondary">Secondary</a>
+            <a href="#" class="btn outline">Outline</a>
+            <a href="#" class="btn submit">Kirim</a>
+        </div>
 
-    <h2 style="color: #333333;">Stevanie Asyera</h2>
-
-    <p style="color: rgb(0, 100, 0);">
-        I am a student who is learning how to build websites..
-    </p>
-
-    <p style="color: rgba(255, 0, 0, 0.79);">
-      I want to develop my skills in HTML and CSS.
-    </p>
-
-    <h2>Kumpulan Tombol</h2>
-
-<div class="button-group">
-    <a href="#" class="btn btn-primary">Primary</a>
-    <a href="#" class="btn btn-secondary">Secondary</a>
-    <a href="#" class="btn btn-outline">Outline</a>
-    <a href="#" class="btn btn-send">Kirim</a>
-</div>
-
+        <a href="../index.html" class="back">← Kembali ke Beranda</a>
+    </div>
 </body>
 </html>
